@@ -1,0 +1,19 @@
+- Client : Mr.Okba Benatia
+- Need   : A labrary system, when user can read, view, or search books, authors.
+- requirements: 
+	- Book : Name, category, version, number of pages, year of publish, author, language
+	- author : name, email, country, address, social media accounts, ..etc
+
+	- Three types of useres :
+		- Admin User (name,phone number,status,type,password)  : 
+			- create,update,delete,view and read(book,author).
+			- Validate and (active deacvtive) users.
+		- Student User (name,email,password,...) : 
+			- view and read books
+			- search (book,author) base on category & language (book), name(author)
+		- Visitor User : 
+			- view books,
+			- search (book,author) base on category & language (book), name(author)
+
+
+		
