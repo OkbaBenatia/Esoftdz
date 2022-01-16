@@ -7,6 +7,6 @@ print(" I think I'm in the right path")
 
 print(" hello 20H20")
 print(" hello i'm Mariam")
-print(" hello ala again")
+
 
 
