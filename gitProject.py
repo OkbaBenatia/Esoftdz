@@ -31,5 +31,8 @@ print("git and github")
 print("hello world")
 print("this is me marouane")
 >>>>>>> c23ca7f03a53ae348aa2bc40704a5ec96afdf9ce
+print("thanks alaa for the database design ...")
+
+
 
 
