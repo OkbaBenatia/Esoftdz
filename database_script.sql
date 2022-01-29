@@ -20,30 +20,7 @@ PRIMARY KEY CLUSTERED
    )
 ) ON [PRIMARY];
 
-DROP TABLE dbo.Book
 
-CREATE TABLE dbo.Book (
-bookID int NOT NULL IDENTITY , --PK
-bookName varchar(250),
-bookVersion varchar (250),
-bookNumberPage int,
-bookAbstract varchar (500),
-bookPicturePath varchar (250),
-bookYearPub varchar (4)  ,
-bookNumberViews int ,
-bookLanguage varchar (30),
-bookPath varchar (200),
-authorID int , --FK
-categoryID int , --FK
-userID int , --FK
-create_At date,
-update_At date,
-
-PRIMARY KEY CLUSTERED 
-   (
-  bookID 
-   )
-) ON [PRIMARY];
 
 
 DROP TABLE dbo.Author 
@@ -57,7 +34,7 @@ authorCountry varchar (20),
 authorAddress varchar (250),
 authorWebsiteUrl varchar (250),
 authorTwitterUrl varchar (250),
-userID int , --FK
+userID int FOREIGN KEY REFERENCES dbo.[User](userID) , --FK
 create_At date,
 update_At date,
 
@@ -72,7 +49,7 @@ DROP TABLE dbo.category
 CREATE TABLE dbo.category (
 categoryID int NOT NULL IDENTITY,
 categoryName varchar(200),
-userID int , --FK
+userID int FOREIGN KEY REFERENCES dbo.[User](userID) , --FK
 create_At date,
 update_At date,
 
@@ -83,3 +60,28 @@ PRIMARY KEY CLUSTERED
    )
 ) ON [PRIMARY];
 
+DROP TABLE dbo.Book
+
+
+CREATE TABLE dbo.Book (
+bookID int NOT NULL IDENTITY , --PK
+bookName varchar(250),
+bookVersion varchar (250),
+bookNumberPage int,
+bookAbstract varchar (500),
+bookPicturePath varchar (250),
+bookYearPub varchar (4)  ,
+bookNumberViews int ,
+bookLanguage varchar (30),
+bookPath varchar (200),
+authorID int FOREIGN KEY REFERENCES dbo.Author(authorID) , --FK
+categoryID int FOREIGN KEY REFERENCES dbo.category(categoryID) , --FK
+userID int FOREIGN KEY REFERENCES dbo.[User](userID), --FK
+create_At date,
+update_At date,
+
+PRIMARY KEY CLUSTERED 
+   (
+  bookID 
+   )
+) ON [PRIMARY];
