@@ -1,0 +1,15 @@
+#first task: create classes (user, book, author, category)
+	- get pull 
+	- create python file (user, book, author, category)
+	- create class (user, book, author, category) :
+		- doc
+	- commit
+
+
+class user : Alaeddine
+
+class book : Meriem
+
+class author : Belkacem
+
+class category : Mohammed
