@@ -11,3 +11,6 @@ Science = Category("Science") #Test of category class
 print(dhikra.create_at)
 print(dhikra.status)
 print(Science.name)
+
+# using built-in vars to show all attributes
+print (vars(dhikra))

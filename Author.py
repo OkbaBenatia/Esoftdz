@@ -1,8 +1,10 @@
 import datetime
 
-# class for the Author object
+# 
 class Author:
-    create_At = datetime.datetime.now()
+    '''class for the Author object'''
+
+    create_At = datetime.datetime.now()  # record the date and time of object creation
     update_At = None
 
     def __init__(self, name, phone, email , country , address , websiteurl , twitterurl , userid):
@@ -13,5 +15,5 @@ class Author:
         self.address = address
         self.websiteurl = websiteurl
         self.twitterurl = twitterurl
-        self.userid = userid
+        self.userid = userid   # Log the user who created the author object
 
