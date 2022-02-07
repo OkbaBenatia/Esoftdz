@@ -2,13 +2,14 @@ import datetime
 
 
 class Author:
-    """ class for the Author object"""
-
-    create_At = datetime.datetime.now()  # Object creation date and time
-    update_At = None
+    # this class for auther
+    create_At = datetime.datetime.now()  # author create date
+    update_At = None # user update date
 
     def __init__(self, name, phone, email, country, address, websiteurl,
                  twitterurl, userid):
+        '''define the attribute in __init__ allow to create the object easly'''
+
         self.name = name
         self.phone = phone
         self.email = email
