@@ -4,7 +4,7 @@ import datetime
 class Author:
     # this class for auther
     create_At = datetime.datetime.now()  # author create date
-    update_At = None # user update date
+    update_At = None # Author update date
 
     def __init__(self, name, phone, email, country, address, websiteurl,
                  twitterurl, userid):
