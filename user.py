@@ -9,7 +9,7 @@ class User:
     user_type = "01"  # user type '00': Admin, '01': student user
 
     def __init__(self, name, email, password, phone, picture):
-        '''define the attribute in __init__ allow to create the object easly'''
+        '''allow to create object automatically'''
 
         self.name = name
         self.email = email

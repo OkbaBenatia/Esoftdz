@@ -5,7 +5,7 @@ class Book:
     update_at = None
 
 
-    def __init__(self, name, version, numpage, abstract, yearpublish, numviews, language, picture, path)
+    def __init__(self, name, version, numpage, abstract, yearpublish, numviews, language, picture, path) :
         self.name = name
         self.version = version
         self.numpage = numpage
